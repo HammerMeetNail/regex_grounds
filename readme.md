@@ -24,15 +24,15 @@ year into 134 different text files and should be added to MongoDB in the followi
 }
 ```
 
-HOW TO RUN  
+## Basic Usage 
 Navigate to regex_grounds and execute the following:
 
-python exercise_1/add_to_mongo.py 
+`python exercise_1/add_to_mongo.py`
 
-REQUIREMENTS  
+## Requirements  
 1) Make sure MongoDB is running on localhost  
 2) Run pip install -r requirements.txt to install relevant modules  
 
-MISC  
+## Misc  
 /names directory is pulled from:  
 https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data  
