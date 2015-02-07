@@ -47,4 +47,8 @@ def sendto_mongo(fixed_data):
             print "Unexpected error:", sys.exc_info()[0]
 
 
+if __name__ == '__main__':
+    data = get_data()
+    fixed_data = fix_data(data)
+    sendto_mongo(fixed_data)
 
