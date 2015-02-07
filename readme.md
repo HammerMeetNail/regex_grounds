@@ -30,10 +30,10 @@ python exercise_1/add_to_mongo.py
 
 REQUIREMENTS
 
-1) Make sure MongoDB is running on localhost
-2) Run pip install -r requirements.txt to install relevant modules
+1) Make sure MongoDB is running on localhost  
+2) Run pip install -r requirements.txt to install relevant modules  
 
 MISC
 
-/names directory is pulled from:
+/names directory is pulled from:  
 https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data
