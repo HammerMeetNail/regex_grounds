@@ -5,7 +5,7 @@ This is an in progress collection of exercises for improving knowledge of regula
 
 - [Exercise 1: Find Baby Names](https://github.com/DJO3/regex_grounds/blob/master/readme.md#Exercise-1:-Find-Baby-Names)
 - [Exercise 2: Find Email Addresses](https://github.com/DJO3/regex_grounds/blob/master/readme.md#Exercise-2:-Find-Email-Addresses)
-- [Exercise 3: Find Twitter Usernames](https://github.com/DJO3/regex_grounds/blob/master/readme.md#Exercise-3:-Find-Twitter-Usernames)
+- [Exercise 3: Find Twitter Usernames](https://github.com/DJO3/regex_grounds/blob/master/readme.md#exercise-3:-find-twitter-usernames)
 
 
 # Exercise 1: Find Baby Names
