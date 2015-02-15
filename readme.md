@@ -36,7 +36,7 @@ Navigate to regex_grounds and execute the following:
 
 ###### Requirements  
 1) Make sure MongoDB is running on localhost  
-2) Run pip install -r requirements.txt to install relevant modules  
+2) Run `pip install -r requirements.txt` to install relevant modules  
 
 ###### Misc  
 /names directory is pulled from:  
@@ -52,12 +52,13 @@ Navigate to regex_grounds and execute the following:
 `python exercise_2/find_addresses.py "url"`
 
 Multiple urls are accepted and can be passed as such:
+
 `python exercise_2/find_addresses.py "url" "url2" "url3"`
 
 ###### Requirements
-1) Run pip install -r requirements.txt to install relevant modules
+1) Run `pip install -r requirements.txt` to install relevant modules
 
-###### Misc  
+###### Misc
 https://www.data.gov/contact should only return one email address.  
 http://www.fightthescams.com/2014/12/04/fake-job-postings-on-craigslist/ should return 4498 email addresses.  
 
