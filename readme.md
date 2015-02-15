@@ -36,3 +36,9 @@ Navigate to regex_grounds and execute the following:
 ## Misc  
 /names directory is pulled from:  
 https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data  
+
+exercise_2
+----------
+Parse https://www.data.gov/contact and return a list of all email addresses. Do not return any duplicates. 
+
+
