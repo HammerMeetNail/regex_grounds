@@ -29,16 +29,16 @@ year into 134 different text files and should be added to MongoDB in the followi
 }
 ```
 
-### Basic Usage 
+###### Basic Usage 
 Navigate to regex_grounds and execute the following:
 
 `python exercise_1/add_to_mongo.py`
 
-### Requirements  
+###### Requirements  
 1) Make sure MongoDB is running on localhost  
 2) Run pip install -r requirements.txt to install relevant modules  
 
-### Misc  
+###### Misc  
 /names directory is pulled from:  
 https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data  
 
@@ -46,7 +46,7 @@ https://catalog.data.gov/dataset/baby-names-from-social-security-card-applicatio
 # exercise_2
 Parse https://www.data.gov/contact and return a list of all email addresses. Do not return any duplicates. 
 
-### Basic Usage 
+###### Basic Usage 
 Navigate to regex_grounds and execute the following:
 
 `python exercise_2/find_addresses.py "url"`
@@ -54,10 +54,10 @@ Navigate to regex_grounds and execute the following:
 Multiple urls are accepted and can be passed as such:
 `python exercise_2/find_addresses.py "url" "url2" "url3"`
 
-### Requirements
+###### Requirements
 1) Run pip install -r requirements.txt to install relevant modules
 
-### Misc  
+###### Misc  
 https://www.data.gov/contact should only return one email address.  
 http://www.fightthescams.com/2014/12/04/fake-job-postings-on-craigslist/ should return 4498 email addresses.  
 
