@@ -3,8 +3,8 @@ This is an in progress collection of exercises for improving knowledge of regula
 
 **Table of Contents**
 
-- [Exercise 1: Find Baby Names](#Exercise-1---Find-Baby-Names)
-- [Exercise 2: Find Email Addresses](#Exercise-2---Find-Email-Addresses)
+- [Exercise 1: Find Baby Names](#exercise-1---find-baby-names)
+- [Exercise 2: Find Email Addresses](#exercise-2---find-email-addresses)
 - [Exercise 3: Find Twitter Usernames](#exercise-3---find-twitter-usernames)
 
 
@@ -69,7 +69,7 @@ Take a look at at the Twitter username creation guidelines and return a list of 
  
 https://support.twitter.com/articles/101299-why-can-t-i-register-certain-usernames
 
-As in exercise_2, do not return any duplicates.
+As in Exercise 2, do not return any duplicates.
 
 ###### Basic Usage 
 Navigate to regex_grounds and execute the following:
