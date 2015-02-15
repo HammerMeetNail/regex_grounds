@@ -3,11 +3,12 @@ This is an in progress collection of exercises for improving knowledge of regula
 
 **Table of Contents**
 
-- [exercise_1](#)
-- [exercise_2](#)
+- [exercise_1](https://github.com/DJO3/regex_grounds/blob/master/readme.md#exercise_1)
+- [exercise_2](https://github.com/DJO3/regex_grounds/blob/master/readme.md#exercise_2)
 
 
-# exercise_1
+exercise_1
+----------
 Assemble 134 years of baby names pulled from Social Security Card Applications-National Level Data. The data is split by
 year into 134 different text files and should be added to MongoDB in the following format:
 
@@ -43,7 +44,8 @@ Navigate to regex_grounds and execute the following:
 https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data  
 
 
-# exercise_2
+exercise_2
+----------
 Parse https://www.data.gov/contact and return a list of all email addresses. Do not return any duplicates. 
 
 ## Basic Usage 
