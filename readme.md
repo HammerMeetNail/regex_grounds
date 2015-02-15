@@ -1,6 +1,11 @@
 This is an in progress collection of exercises for improving knowledge of regular expressions.
 ----------------------------------------------------------------------------------------------
 
+**Table of Contents**
+
+- [exercise_1](#)
+- [exercise_2](#)
+
 
 exercise_1
 ----------
