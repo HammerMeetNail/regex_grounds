@@ -82,3 +82,8 @@ Multiple urls are accepted and can be passed as such:
 
 ###### Requirements
 1) Run `pip install -r requirements.txt` to install relevant modules
+
+###### Misc
+https://support.twitter.com/articles/101299-why-can-t-i-register-certain-usernames should return 4 usernames.
+https://www.data.gov/contact should only return 5 usernames.
+
