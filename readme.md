@@ -6,6 +6,7 @@ This is an in progress collection of exercises for improving knowledge of regula
 - [Exercise 1: Find Baby Names](#exercise-1---find-baby-names)
 - [Exercise 2: Find Email Addresses](#exercise-2---find-email-addresses)
 - [Exercise 3: Find Twitter Usernames](#exercise-3---find-twitter-usernames)
+- [Exercise 4: Parse Accesss Logs](#exercise-4---parse-accesss-logs)
 
 
 # Exercise 1 - Find Baby Names
