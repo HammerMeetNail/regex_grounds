@@ -87,3 +87,12 @@ Multiple urls are accepted and can be passed as such:
 https://support.twitter.com/articles/101299-why-can-t-i-register-certain-usernames should return 4 usernames.
 https://www.data.gov/contact should only return 5 usernames.
 
+# Exercise 4 - Parse Accesss Logs
+
+Split the following Nginx access log into its components:
+
+`192.168.1.12 - - [23/Jun/2015:11:10:57 +0000] "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12"`
+
+The components are:
+
+`$http_x_real_ip - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent" "$http_x_forwarded_for"`
