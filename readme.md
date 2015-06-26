@@ -6,7 +6,7 @@ This is an in progress collection of exercises for improving knowledge of regula
 - [Exercise 1: Find Baby Names](#exercise-1---find-baby-names)
 - [Exercise 2: Find Email Addresses](#exercise-2---find-email-addresses)
 - [Exercise 3: Find Twitter Usernames](#exercise-3---find-twitter-usernames)
-- [Exercise 4: Parse Accesss Logs](#exercise-4---parse-accesss-logs)
+- [Exercise 4: Parse Access Logs](#exercise-4---parse-access-logs)
 
 
 # Exercise 1 - Find Baby Names
@@ -88,7 +88,7 @@ Multiple urls are accepted and can be passed as such:
 https://support.twitter.com/articles/101299-why-can-t-i-register-certain-usernames should return 4 usernames.
 https://www.data.gov/contact should only return 5 usernames.
 
-# Exercise 4 - Parse Accesss Logs
+# Exercise 4 - Parse Access Logs
 
 Split the following Nginx access log into its components:
 
@@ -96,4 +96,4 @@ Split the following Nginx access log into its components:
 
 The components are:
 
-`$http_x_real_ip - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent" "$http_x_forwarded_for"`
+`$http_x_real_ip - [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent" "$http_x_forwarded_for"`
