@@ -26,3 +26,14 @@ print(http_x_real_ip.groups()[0])
 
 time_local = re.search(r'(\[.*\])', nlog)
 print(time_local.groups()[0])
+
+# request verbose
+print(timeit(setup="import re", stmt='''re.findall(r'\"(\w{0,4}.* \w{0,4}/\d\.\d)','GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1')''', number=1000000))
+# #1.277367499016691
+#
+# # request succinct
+print(timeit(setup="import re", stmt='''re.findall(r'"(.*)" \d','GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1')''', number=1000000))
+# #1.4014256190275773
+
+time_local = re.search(r'\"(\w{0,4}.* \w{0,4}/\d\.\d)', nlog)
+print(time_local.groups()[0])
