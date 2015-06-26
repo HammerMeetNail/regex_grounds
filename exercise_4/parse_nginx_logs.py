@@ -35,5 +35,5 @@ print(timeit(setup="import re", stmt='''re.findall(r'\"(\w{0,4}.* \w{0,4}/\d\.\d
 print(timeit(setup="import re", stmt='''re.findall(r'"(.*)" \d','GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1')''', number=1000000))
 # #1.4014256190275773
 
-time_local = re.search(r'\"(\w{0,4}.* \w{0,4}/\d\.\d)', nlog)
-print(time_local.groups()[0])
+request = re.search(r'\"(\w{0,4}.* \w{0,4}/\d\.\d)', nlog)
+print(request.groups()[0])
