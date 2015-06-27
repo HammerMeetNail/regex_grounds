@@ -38,33 +38,33 @@ http_x_forwarded_for = r.groups()[7]
 
 # time_local verbose
 # print(timeit(setup="import re", stmt='''r = re.search(r'(\d{2}/\w{3}/[2][0]\d{2}:\d{2}:\d{2}:\d{2}\s[+][0]{4})', "[23/Jun/2015:11:10:57 +0000]")''', number=1000000))
-# 1.46203494072
+# 1.248802040994633
 
 # time_local succinct
 # print(timeit(setup="import re", stmt='''r = re.search(r'(\[.*\])', "[23/Jun/2015:11:10:57 +0000]")''', number=1000000))
-# 1.04375910759
+# 1.0256699790043058
 
 # time_local = re.search(r'(\[.*\])', nlog)
 # print(time_local.groups()[0])
 
 # request verbose
 # print(timeit(setup="import re", stmt='''r =re.search(r'\"(\w{0,4}.* \w{0,4}/\d\.\d)','GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1')''', number=1000000))
-#1.277367499016691
+# 0.8531186500040349
 
 # request succinct
 # print(timeit(setup="import re", stmt='''r = re.search(r'"(.*)" \d','GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1')''', number=1000000))
-# 1.4014256190275773
+# 0.8583502010005759
 
 # request = re.search(r'\"(\w{0,4}.* \w{0,4}/\d\.\d)', nlog)
 # print(request.groups()[0])
 
-# request, body_bytes_sent verbose
+# status, body_bytes_sent verbose
 # print(timeit(setup="import re", stmt='''r = re.search(r' (\d\d\d) (\d+)','HTTP/1.1" 302 5949502 "http:')''', number=1000000))
-# 2.312330122978892
+# 1.0922818089966313
 
-# request, body_bytes_sent succinct
+# status, body_bytes_sent succinct
 # print(timeit(setup="import re", stmt='''r = re.search(r' (\d+) (\d+)','HTTP/1.1" 302 5949502 "http:')''', number=1000000))
-# 2.1297434479929507
+# 1.1674523820038303
 
 # r = re.search(r' (\d+) (\d+)', nlog)
 # status = r.groups()[0]
@@ -73,11 +73,11 @@ http_x_forwarded_for = r.groups()[7]
 
 # http_referer verbose
 # print(timeit(setup="import re", stmt='''r = re.search(r'(\w{3,5}://\S+)"','302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0')''', number=1000000))
-# 2.963139974977821
+# 1.5528190339973662
 
 # http_referer succinct
 # print(timeit(setup="import re", stmt='''r = re.search(r'\d "(\S+)"','302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0')''', number=1000000))
-# 2.5299302529892884
+# 1.3216939499980072
 
 # r = re.search(r'\d "(\S+)"', nlog)
 # http_referer = r.groups()[0]
@@ -85,12 +85,12 @@ http_x_forwarded_for = r.groups()[7]
 
 # http_user_agent succinct
 # print(timeit(setup="import re", stmt='''r = re.search(r'["] ["](.*)["] ["]',' "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12')''', number=1000000))
-# 2.240282804996241
+# 1.3882431919992086
 
 # r = re.search(r'["] ["](.*)["] ["]', nlog)
 # http_user_agent = r.groups()[0]
 # print(http_user_agent)
 
-# Full regex statement
-# print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3}) - - \[(.*)\] \"(\w{0,4}.* \w{0,4}/\d\.\d)\" (\d+) (\d+) "(\S+)" ["](.*)["] ["](\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})','192.168.1.12 - - [23/Jun/2015:11:10:57 +0000] "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12"')''', number=1000000))
-# 10.371555257006548
+Full regex statement
+print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3}) - - \[(.*)\] \"(\w{0,4}.* \w{0,4}/\d\.\d)\" (\d+) (\d+) "(\S+)" ["](.*)["] ["](\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})','192.168.1.12 - - [23/Jun/2015:11:10:57 +0000] "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12"')''', number=1000000))
+7.735765480996633
