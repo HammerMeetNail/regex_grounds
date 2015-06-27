@@ -25,13 +25,13 @@ http_user_agent = r.groups()[6]
 http_x_forwarded_for = r.groups()[7]
 # print(http_x_forwarded_for)
 
-# http_x_real_ip verbose
-# print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})','192.168.1.1 999.999.999.999')''', number=1000000))
-# 1.6111507180003173
+http_x_real_ip verbose
+print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})','192.168.1.1 999.999.999.999')''', number=1000000))
+1.6111507180003173
 
-# http_x_real_ip succinct
-# print(timeit(setup="import re", stmt='''r = re.search(r'(?:\d{1,3}\.){3}\d{1,3}','192.168.1.1 999.999.999.999')''', number=1000000))
-# 1.7421739230003368
+http_x_real_ip succinct
+print(timeit(setup="import re", stmt='''r = re.search(r'((?:\d{1,3}\.){3}\d{1,3}),'192.168.1.1 999.999.999.999')''', number=1000000))
+1.7421739230003368
 
 # http_x_real_ip = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})', nlog)
 # print(http_x_real_ip.groups()[0])
