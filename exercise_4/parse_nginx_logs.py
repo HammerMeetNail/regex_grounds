@@ -6,7 +6,7 @@ import re
 nlog = '192.168.1.12 - - [23/Jun/2015:11:10:57 +0000] "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12"'
 
 # Full regex statement
-r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3}) - - \[(.*)\] \"(\w{3,6}.* \w{0,4}/\d\.\d)\" (\d+) (\d+) "(\S+)" ["](.*)["] ["](\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})', nlog)
+r = re.search(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) - - \[(.*)\] \"(\w{3,6}.* \w{0,4}/\d\.\d)\" (\d+) (\d+) "(\S+)" ["](.*)["] ["](\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})', nlog)
 
 http_x_real_ip = r.groups()[0]
 # print(http_x_real_ip)
@@ -26,7 +26,7 @@ http_x_forwarded_for = r.groups()[7]
 # print(http_x_forwarded_for)
 
 # http_x_real_ip explicit
-# print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})', '192.168.1.1 999.999.999.999')''', number=1000000))
+# print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})', '192.168.1.1 999.999.999.999')''', number=1000000))
 # 1.159849308001867
 
 # http_x_real_ip succinct
@@ -92,5 +92,5 @@ http_x_forwarded_for = r.groups()[7]
 # print(http_user_agent)
 
 Full regex statement
-print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3}) - - \[(.*)\] \"(\w{0,4}.* \w{0,4}/\d\.\d)\" (\d+) (\d+) "(\S+)" ["](.*)["] ["](\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3})','192.168.1.12 - - [23/Jun/2015:11:10:57 +0000] "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12"')''', number=1000000))
+print(timeit(setup="import re", stmt='''r = re.search(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) - - \[(.*)\] \"(\w{0,4}.* \w{0,4}/\d\.\d)\" (\d+) (\d+) "(\S+)" ["](.*)["] ["](\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})','192.168.1.12 - - [23/Jun/2015:11:10:57 +0000] "GET /entry/how-create-configure-free-ssl-certificate-using-django-and-pythonanywhere HTTP/1.1" 302 5 "http://www.reddit.com/r/Python/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.18 Safari/537.36" "192.168.1.12"')''', number=1000000))
 7.735765480996633
